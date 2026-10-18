@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TripWise</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<nav>
+
+<div class="cont1">
+    <div class="logo">
+        <img src="123.png" alt="Logo">
+        <span>TripWise</span>
+    </div>
+
+    <ul class="mid">
+        <li>Home</li>
+        <li> Previous Destination Details</li>
+        <li>My Trip</li>
+        <li>Travel Guides</li>
+    </ul>
+</div>
+
+
+<ul class="ending">
+    <li>&#128269;</li> 
+    <li class="profile">
+    <img src="pic.jpg" alt="name">
+    <span>NAME &#9662;</span>
+    </li>
+</ul>
+</nav>
+
+
+
+
+
+
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+    <h1>
+        Plan Smarter Trips<br>
+        for a Brighter You
+    </h1>
+
+    <p>
+        Discover amazing places, build your perfect itinerary,<br>
+        and make every trip unforgettable.
+    </p>
+
+    <form class="search-box">
+
+        <div class="search-item destination">
+            <span class="search-icon">⌖</span>
+            <div>
+                <label for="destination">Where to?</label>
+                <input
+                    type="text"
+                    id="destination"
+                    name="destination"
+                    placeholder="Search destinations, cities, or experiences"
+                    required
+                >
+            </div>
+        </div>
+
+        <div class="search-item dates">
+            <span class="search-icon">▦</span>
+            <div>
+                <label for="travel-date">Travel dates</label>
+                <input type="date" id="travel-date" name="date">
+            </div>
+        </div>
+
+        <div class="search-item travelers">
+            <span class="search-icon">♙</span>
+            <div>
+                <label for="traveler-count">Travelers</label>
+                <select id="traveler-count" name="travelers">
+                    <option value="1">1 traveler</option>
+                    <option value="2" selected>2 travelers</option>
+                    <option value="3">3 travelers</option>
+                    <option value="4">4 travelers</option>
+                    <option value="5">5 travelers</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="search-btn" type="submit">
+            <span>⌕</span> Search
+        </button>
+
+    </form>
+
+</div>
+</section>
+
+
+
+
+
+
+    
+
+<section class="destinations" id="destinations">
+    <div class="section-heading">
+        <div>
+            <h2 id="results-title">Trending Destinations</h2>
+            <p>Popular places loved by travelers around the world</p>
+        </div>
+    </div>
+
+    <div id="places-grid" class="places-grid"></div>
+    <p id="results-status"></p>
+</section>
+
+<script src="script.js" defer></script>
+
+
+
+
+
+</body>
+</html>
